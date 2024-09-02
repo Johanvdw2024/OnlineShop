@@ -1,0 +1,51 @@
+﻿@model OnlineShop.Models.ProductsModel
+
+<h1>Product Details</h1>
+
+<div>
+    <h4>Products</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            Name
+        </dt>
+        <dd class="col-sm-9">
+            @Model.ProductName
+        </dd>
+
+        <dt class="col-sm-3">
+            ItemDescription
+        </dt>
+        <dd class="col-sm-9">
+            @Model.ItemDescription
+        </dd>
+
+        <dt class="col-sm-3">
+            Date Created
+        </dt>
+        <dd class="col-sm-9">
+            @Model.Created
+        </dd>
+
+        <dt class="col-sm-3">
+            Date Updated)
+        </dt>
+        <dd class="col-sm-9">
+            @Model.Updated
+        </dd>
+
+        <dt class="col-sm-3">
+           Price
+        </dt>
+        <dd class="col-sm-9">
+            @Model.Price)
+        </dd>
+
+        <dt class="col-sm-3">
+            IsAvailable)
+        </dt>
+        <dd class="col-sm-9">
+            @Model.IsAvailable)
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<OnlineShop.Models.ProductsModel>
+
+<h1>Home</h1>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        if (item.IsAvailable)
+        {
+            <div class="card card-hover" style="width: 18rem; margin:10px;">
+                <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProductName)</h5>
+                    <p class="card-text">@($"{item.Price / 100.0:C}")</p>
+                    <a class="stretched-link" href="/Product/Details/@item.Id"></a>
+                </div>
+            </div>
+        }
+    }
+</div>
